@@ -1,7 +1,6 @@
 import React, { useDebugValue, useEffect, useState } from 'react';
 import { Container, Card, Button, Form, Table } from 'react-bootstrap';
 import { db } from '../../utils/firebaseConfig'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../login/rec.png'
 import './index.css'
 

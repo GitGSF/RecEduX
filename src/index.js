@@ -7,6 +7,7 @@ import {FirebaseAppProvider} from 'reactfire'
 
 import Login from './pages/login';
 import Cadastrar from './pages/cadastrar';
+import Tarefas from './pages/tarefas';
 
 //CSS aplicação
 import './pages/login/index.css';
@@ -14,7 +15,7 @@ import './pages/login/index.css';
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-    <Login />
+    <Tarefas />
     </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')

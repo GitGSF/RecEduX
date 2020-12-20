@@ -1,0 +1,30 @@
+.form-group{
+    padding-top: 10px;
+    width:70px,
+
+    
+}
+.form-control{
+    width: 800px;
+}
+
+.btn-primary{
+    height: 50px;
+    background-color: royalblue;
+    border-color: royalblue;
+    float: right;
+    float: right;
+
+}
+
+
+
+.btn-warning{
+    background-color:yellowgreen;
+    border-color: yellowgreen;
+}
+
+.sair{
+    background-color: transparent;
+    padding-left: 90px;
+}

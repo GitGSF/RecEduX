@@ -35,7 +35,7 @@ const Cadastrar = () => {
                 <img src={logo} alt='EduX' style={{ width: '64px' }} />
                 <a className="texto2">Criar Conta</a>
               
-
+                
                 <Form.Group controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Email" value={email} onChange={event => setEmail(event.target.value)} required/>
                 </Form.Group>
@@ -51,7 +51,7 @@ const Cadastrar = () => {
                 </Button>
                 <br /><br />
                 <Button variant="secondary" type="submit">
-                    Entrar
+                    Já tenho conta
                 </Button>
             </div>
         </Form>

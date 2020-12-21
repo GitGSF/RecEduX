@@ -61,12 +61,10 @@ a{
 }
 
 a.texto1{
-    margin-left: -10px;
+    margin-left: -80px;
 }
 
-.texto{
-  margin-left:-45px;
-}
+
 
 .btn-secondary{
     height: 40px;

@@ -2,9 +2,10 @@ import React, { useDebugValue, useEffect, useState } from 'react';
 import { Container, Card, Button, Form, Table } from 'react-bootstrap';
 import { db } from '../../utils/firebaseConfig'
 import logo from '../login/rec.png'
-import './index.css'
 
-const TarefasPage = () => {
+import './index.css';
+
+const Tarefas = () => {
     const [tarefas, setTarefas] = useState([]);
     const [id, setId] = useState(0);
     const [nome, setNome] = useState('');
@@ -120,18 +121,18 @@ const TarefasPage = () => {
                 <img src={logo} alt='EduX' style={{ width: '64px' }} />
                 <Button variant='sair' type="submit" >Sair</Button>
                 </div>
-                <h1>Tarefas</h1>
+                <h1 variant='titulo'>Tarefas</h1>
                 <p>Gerencie suas tarefas</p>
                 <Card>
                         <Card.Body>
                         <Form onSubmit={event => salvar(event)}>
-                            <Form.Group controlId="textTarefa">
+                            <Form.Group variant ='textarefa' controlId="textTarefa">
                                 <Form.Control type="textTarefa" value={nome} onChange={event => setNome(event.target.value)} />
                             </Form.Group>
                             
             
 
-                            <Button type="submit" >Salvar</Button>
+                            <Button variant ='salvar'type="submit" >Salvar</Button>
                         </Form>
                         </Card.Body>
                     </Card>
@@ -150,7 +151,7 @@ const TarefasPage = () => {
                                     return (
                                         <tr key={index}>
                                             <td>{item.nome}</td>
-                                            <td>{item.descricao}</td>
+                                        
                                             <td>
                                                 <Button type="button" variant="warning" value={item.id} onClick={ event => editar(event)}>Editar</Button>
                                                 <Button type="button" variant="danger" value={item.id} style={{ marginLeft : '30px'}} onClick={ event => remover(event)}>Remover</Button>
@@ -168,4 +169,4 @@ const TarefasPage = () => {
 
 }
 
-export default TarefasPage;
+export default Tarefas;

@@ -5,7 +5,7 @@ import logo from '../login/rec.png'
 import { useFirebaseApp } from 'reactfire';
 import './index.css'
 
-const Login = () => {
+const EsqueciSenha = () => {
     const firebase = useFirebaseApp();
 
     const [email, setEmail ] = useState('');
@@ -33,24 +33,18 @@ const Login = () => {
         <Form className='form-signin' onSubmit={event => Logar(event)} >
             <div className='text-center'>
                 <img src={logo} alt='EduX' style={{ width: '64px' }} />
-                <a className="texto">Login</a>
+                <a className="texto1">Esqueci a senha</a>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Email" value={email} onChange={event => setEmail(event.target.value)} required/>
                 </Form.Group>
 
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label></Form.Label>
-                    <Form.Control type="password" placeholder="Senha" value={senha} onChange={event => setSenha(event.target.value)} required/>
-
-                </Form.Group>
 
                 <Button variant="primary" type="submit">
-                    Entrar
+                    Enviar
                 </Button>
                 <br /><br />
-                <a href='/' style={{ marginTop: '30px'}}>Esqueci minha senha</a>
                 <Button variant="secondary" type="submit">
-                    Cadastrar
+                    Já tenho Conta
                 </Button>
             </div>
         </Form>
@@ -58,4 +52,4 @@ const Login = () => {
     )
 
 }
-export default Login;
+export default EsqueciSenha;

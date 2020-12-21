@@ -32,7 +32,7 @@ const routing = (
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-    <EsqueciSenha />
+    <Tarefas/>
     </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
